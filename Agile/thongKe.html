@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thống Kê Dãy Nhà Trọ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2d89ef;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .card p {
+      color: #555;
+    }
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #2d89ef;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Thống Kê Dãy Nhà Trọ A1</h1>
+</header>
+
+<section class="stats">
+  <div class="card">
+    <h2>20</h2>
+    <p>Tổng số phòng</p>
+  </div>
+  <div class="card">
+    <h2>15</h2>
+    <p>Phòng đã cho thuê</p>
+  </div>
+  <div class="card">
+    <h2>5</h2>
+    <p>Phòng trống</p>
+  </div>
+  <div class="card">
+    <h2>120.000.000đ</h2>
+    <p>Tổng tiền thuê tháng này</p>
+  </div>
+</section>
+
+<section>
+  <table>
+    <thead>
+      <tr>
+        <th>Phòng</th>
+        <th>Tên khách thuê</th>
+        <th>Số điện thoại</th>
+        <th>Ngày bắt đầu thuê</th>
+        <th>Tiền thuê/tháng</th>
+        <th>Trạng thái</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Nguyễn Văn A</td>
+        <td>0909123456</td>
+        <td>01/01/2025</td>
+        <td>6.000.000đ</td>
+        <td>Đang thuê</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Trần Thị B</td>
+        <td>0911223344</td>
+        <td>10/02/2025</td>
+        <td>6.500.000đ</td>
+        <td>Đang thuê</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>6.000.000đ</td>
+        <td>Trống</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  &copy; 2025 Quản lý nhà trọ
+</footer>
+
+</body>
+</html>
